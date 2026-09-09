@@ -1,0 +1,52 @@
+kill server
+------------
+netstat -ano | findstr :3978
+ 
+taskkill /F /IM node.exe
+taskkill /F /PID <PID>
+
+
+sharepoint start
+==================
+npm start
+
+
+Node backend
+==============
+Nodemon
+--------
+"scripts": {
+    "devstart": "nodemon ./bin/www",
+},
+npm run devstart
+
+
+DotNet
+============
+dotnet build
+dotnet restore
+dotnet run
+
+
+
+nvm ls
+nvm use 22.14.0
+
+yo @microsoft/generator-sharepoint
+yo @microsoft/sharepoint 
+
+Local
+======
+npm run build
+heft start
+
+
+Production package
+=====================
+npx heft clean
+npx heft build --production
+npx heft package-solution --production
+
+
+https://m365x69937178.sharepoint.com/sites/test/_layouts/15/workbench.aspx
+https://m365x69937178.sharepoint.com/sites/test/SitePages/PradeepReview.aspx
